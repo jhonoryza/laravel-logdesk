@@ -1,0 +1,31 @@
+{
+    "name": "jhonoryza/logdesk",
+    "description": "support package for logdesk app",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jhonoryza\\Logdesk\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "fajar sidik priatna",
+            "email": "jardik.oryza@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "symfony/var-dumper": "^4.2|^5.1|^6.0"
+    },
+    "require-dev": {
+        "illuminate/support": "6.x|^8.18|^9.0",
+        "nesbot/carbon": "^2.63"
+    }
+}
