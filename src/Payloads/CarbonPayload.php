@@ -27,7 +27,7 @@ class CarbonPayload extends Payload
     public function getContent(): array
     {
         return [
-            'formatted' => $this->carbon ? $this->carbon->format($this->format) : null,
+            'values' => $this->carbon ? $this->carbon->format($this->format) : null,
             'timestamp' => $this->carbon ? $this->carbon->timestamp : null,
             'timezone' => $this->carbon ? $this->carbon->timezone->getName() : null,
         ];

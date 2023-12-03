@@ -15,7 +15,7 @@ class NullPayload extends Payload
     public function getContent(): array
     {
         return [
-            'content' => null,
+            'values' => null,
             'label' => 'Null',
         ];
     }

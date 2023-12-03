@@ -2,17 +2,12 @@
 
 namespace Jhonoryza\Logdesk\Payloads;
 
-use Exception;
 use Jhonoryza\Logdesk\Concerns\ArgumentConverter;
-use Jhonoryza\Logdesk\Concerns\PlainTextDumper;
 
 class LogPayload extends Payload
 {
     /** @var array */
     protected $values;
-
-    /** @var array */
-    protected $meta = [];
 
     public static function createForArguments(array $arguments): Payload
     {
@@ -23,21 +18,11 @@ class LogPayload extends Payload
         return new static($dumpedArguments);
     }
 
-    public function __construct($values, $rawValues = [])
+    public function __construct($values)
     {
-        if (! is_array($values)) {
-            if (is_int($values) && $values >= 11111111111111111) {
-                $values = (string) $values;
-            }
-
-            $values = [$values];
+        if (is_int($values) && $values >= 11111111111111111) {
+            $values = (string)$values;
         }
-
-        $this->meta = [
-            [
-                'clipboard_data' => $this->getClipboardData($rawValues),
-            ],
-        ];
 
         $this->values = $values;
     }
@@ -51,20 +36,6 @@ class LogPayload extends Payload
     {
         return [
             'values' => $this->values,
-            'meta' => $this->meta,
         ];
-    }
-
-    protected function getClipboardData($value): string
-    {
-        if (is_string($value) || is_numeric($value)) {
-            return (string) $value;
-        }
-
-        try {
-            return PlainTextDumper::dump($value);
-        } catch (Exception $ex) {
-            return '';
-        }
     }
 }

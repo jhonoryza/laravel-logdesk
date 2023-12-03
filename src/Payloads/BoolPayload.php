@@ -20,7 +20,7 @@ class BoolPayload extends Payload
     public function getContent(): array
     {
         return [
-            'content' => $this->bool,
+            'values' => $this->bool,
             'label' => 'Boolean',
         ];
     }

@@ -8,8 +8,7 @@ class Payload
     {
         return [
             'type' => $this->getType(),
-            'content' => $this->getContent(),
-            'origin' => $this->getOrigin()->toArray(),
+            'content' => $this->getContent()
         ];
     }
 

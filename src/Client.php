@@ -55,8 +55,10 @@ class Client
             $curlHandle = $this->getCurlHandleForUrl('get', '_availability_check');
 
             curl_exec($curlHandle);
+            //dd(curl_errno($curlHandle));
 
             $success = curl_errno($curlHandle) === CURLE_HTTP_NOT_FOUND;
+
             // expire the cache entry after 30 sec
             $expiresAt = microtime(true) + 30.0;
 

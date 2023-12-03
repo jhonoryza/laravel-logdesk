@@ -10,7 +10,7 @@ class Logdesk
 
     public function __construct()
     {
-        self::$client = $client ?? self::$client ?? new Client();
+        self::$client = $client ?? self::$client ?? new Client(host: '192.168.18.228', portNumber: 3000);
     }
 
     public function die($status = ''): void
@@ -28,7 +28,7 @@ class Logdesk
     public function sendRequest($payloads): self
     {
         $request = new Request($payloads);
-
+//dd($request->toArray());
         self::$client->send($request);
 
         return $this;
