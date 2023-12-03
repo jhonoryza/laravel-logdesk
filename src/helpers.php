@@ -13,7 +13,7 @@ if (! function_exists('logdesk')) {
 }
 
 if (! function_exists('logdeskDie')) {
-    function logdeskDie(...$args)
+    function logdeskDie(...$args): void
     {
         logdesk(...$args)->die();
     }

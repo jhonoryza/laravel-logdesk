@@ -9,7 +9,7 @@ use Jhonoryza\Logdesk\Payloads\LogPayload;
 use Jhonoryza\Logdesk\Payloads\NullPayload;
 use Jhonoryza\Logdesk\Payloads\Payload;
 
-class PayloadFactoyr
+class PayloadFactory
 {
     /** @var array */
     protected $values;

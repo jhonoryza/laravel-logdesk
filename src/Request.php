@@ -2,6 +2,8 @@
 
 namespace Jhonoryza\Logdesk;
 
+use Jhonoryza\Logdesk\Payloads\Payload;
+
 class Request
 {
     protected $payloads;

@@ -2,6 +2,8 @@
 
 namespace Jhonoryza\Logdesk;
 
+use Jhonoryza\Logdesk\Concerns\PayloadFactory;
+
 class Logdesk
 {
     protected static $client;
@@ -23,13 +25,11 @@ class Logdesk
         return $this->sendRequest($payloads);
     }
 
-    public function sendRequest($payloads, array $meta = []): self
+    public function sendRequest($payloads): self
     {
-        $request = new Request($this->uuid, $payloads, $allMeta);
+        $request = new Request($payloads);
 
         self::$client->send($request);
-
-        self::rateLimiter()->hit();
 
         return $this;
     }
