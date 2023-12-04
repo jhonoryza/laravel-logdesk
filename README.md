@@ -1,14 +1,27 @@
-# Logdesk library
+# Laravel Logdesk
 
-## default
+## Installation
 
-- port : 33555
-- host : localhost
+install this package
 
-## api
+```bash
+composer require jhonoryza/logdesk --dev
+```
 
-### get /_availability_check
+download desktop app here [https://github.com/jhonoryza/logdesk/releases/latest](https://github.com/jhonoryza/logdesk/releases/latest)
 
-- result 404
+## Usage
 
-### post /api/echo
+```php
+logdesk('ok'); // string
+logdesk(new User()); // object
+logdesk(['foo' => 'bar') // array
+logdesk(true); // boolean
+```
+
+or you can pass multiple value
+
+```php
+logdesk('ok', ['foo' => 'bar'], new User());
+```
+
