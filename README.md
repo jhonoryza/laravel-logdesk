@@ -27,3 +27,10 @@ or you can pass multiple value
 logdesk('ok', ['foo' => 'bar'], new User());
 ```
 
+### Security
+
+If you've found a bug regarding security please mail [security@spatie.be](mailto:security@spatie.be) instead of using the issue tracker.
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
