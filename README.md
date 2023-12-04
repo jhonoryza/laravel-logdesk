@@ -1,5 +1,7 @@
 # Laravel Logdesk
 
+insipired by [spatie ray](https://github.com/spatie/laravel-ray) create free version with minimum features.
+
 ## Installation
 
 install this package
