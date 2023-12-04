@@ -29,7 +29,7 @@ logdesk('ok', ['foo' => 'bar'], new User());
 
 ### Security
 
-If you've found a bug regarding security please mail [security@spatie.be](mailto:security@spatie.be) instead of using the issue tracker.
+If you've found a bug regarding security please mail [jardik.oryza@gmail.com](mailto:jardik.oryza@gmail.com) instead of using the issue tracker.
 
 ## License
 
