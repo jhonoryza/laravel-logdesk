@@ -23,10 +23,16 @@ logdesk(['foo' => 'bar') // array
 logdesk(true); // boolean
 ```
 
-or you can pass multiple value
+you can pass multiple value
 
 ```php
 logdesk('ok', ['foo' => 'bar'], new User());
+```
+
+or you can have behaviour like `dd()` in laravel to die and dump
+
+```php
+logdeskDie('die');
 ```
 
 ### Security
