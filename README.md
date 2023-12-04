@@ -12,7 +12,7 @@ composer require jhonoryza/logdesk --dev
 
 download desktop app here [https://github.com/jhonoryza/logdesk/releases/latest](https://github.com/jhonoryza/logdesk/releases/latest)
 
-![image](./logdesk.png)
+![image](./logdesk-2.png)
 
 ## Usage
 
