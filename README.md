@@ -1,5 +1,17 @@
 # Laravel Logdesk
 
+<p align="center">
+    <a href="https://packagist.org/packages/jhonoryza/logdesk">
+        <img src="https://poser.pugx.org/jhonoryza/logdesk/d/total.svg" alt="Total Downloads">
+    </a>
+    <a href="https://packagist.org/packages/jhonoryza/logdesk">
+        <img src="https://poser.pugx.org/jhonoryza/logdesk/v/stable.svg" alt="Latest Stable Version">
+    </a>
+    <a href="https://packagist.org/packages/jhonoryza/logdesk">
+        <img src="https://poser.pugx.org/jhonoryza/logdesk/license.svg" alt="License">
+    </a>
+</p>
+
 insipired by [spatie ray](https://github.com/spatie/laravel-ray) create free version with minimum features.
 
 ## Installation
